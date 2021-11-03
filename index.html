@@ -1,0 +1,25 @@
+<html>
+  <head>
+  <!-- https://www.w3schools.com/howto/howto_js_rangeslider.asp -->
+  <div class="slidecontainer">
+Goal Theta:
+  <input type="range" min="-200" max="200" value="0" class="slider" id="goalslider">
+</div>
+ <div class="slidecontainer">
+Kp:
+  <input type="range" min="0" max="200" value="50" class="slider" id="kpslider">
+</div>
+ <div class="slidecontainer">
+Kd:
+  <input type="range" min="-200" max="200" value="100" class="slider" id="kdslider">
+</div>
+<button onclick="kickCallback()">Kick Rod</button>
+    <input type="checkbox" id="controlActive" value="control_Active"> Control Disable<br>
+  <div id='sketch-holder'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+    <script src="closedloop.js"></script>
+    </div>
+  </head>
+  <body>
+  </body>
+</html>
